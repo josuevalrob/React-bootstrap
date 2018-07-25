@@ -1,9 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-function Href(props) {
-  return <Link className={props.classLink} to={props.pathLink}>{props.name}</Link>;
-}
+import Href from '../helper/Hreflink'
 
 class Hamburger extends React.Component {
   render () {
@@ -28,7 +24,7 @@ class MenuElements extends React.Component {
               <Href classLink="nav-link" pathLink="/about" name="About"/>
             </li>
             <li className="nav-item">
-              <Href classLink="nav-link" pathLink="/topics" name="Topics"/>
+              <Href classLink="nav-link" pathLink="/contact" name="Contact"/>
             </li>
           </ul>
         </div>

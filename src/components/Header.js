@@ -1,16 +1,23 @@
 import React from 'react';
-import Wrapper from '../helper/helper';
+
+const SimpleWrapper = (props) => (
+        <div className="container">
+          <div className="row">
+            {props.children}
+          </div>
+        </div>
+)
 
 function HeaderContent (props) {
   return (
-  <Wrapper>
+  <SimpleWrapper>
     <div className="col-lg-8 col-md-10 mx-auto">
       <div className="site-heading">
           <h1>{props.h1title}</h1>
         <span className="subheading">{props.spantitle}</span>
       </div>
     </div>
-  </Wrapper>
+  </SimpleWrapper>
   )
 }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
-import Wrapper from '../helper/helper';
+import Wrapper from '../helper/Wrapper';
+import PreviewPost from './PreviewPost'
 
 class Home extends React.Component {
   render() {
@@ -8,8 +9,8 @@ class Home extends React.Component {
       <div>
         <Header h1title="Home title" spantitle="Home Sub title"/>
           <Wrapper>
-            <h1>I am something inside the home</h1>
-          </Wrapper>
+            <PreviewPost />
+        </Wrapper>
 
       </div>
     );
